@@ -40,6 +40,16 @@ import { generate } from 'stability-client'
 const api = generate({
   prompt: 'A Stunning House',
   apiKey: process.env.DREAMSTUDIO_API_KEY,
+       #outDir: 'public/images',
+       #debug: debug,
+       #samples: samples,
+       #engine: engine,
+       #seed: seed,
+       #width: width,
+       #height: height,
+       #diffusion: diffusion,
+       #steps: steps,
+       #cfgScale: cgf_scale,
 })
 
 api.on('image', ({ buffer, filePath }) => {
